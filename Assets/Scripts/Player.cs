@@ -17,5 +17,10 @@ public class Player : MonoBehaviour {
 	void Move() { 
 		body.velocity = new Vector3(Input.GetAxis("Horizontal"),
 			0,Input.GetAxis("Vertical")) * Time.deltaTime * speed;
-	}	
+	}
+
+	void OnTriggerEnter(Collider collider) {
+		if (collider.transform.tag == "end")
+			Application.LoadLevel ("victory");
+	}
 }

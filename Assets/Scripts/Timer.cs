@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour {
 		}
 
 		gameSate.state = GameState.States.GAME_OVER;
-		Application.LoadLevel ("GameOver");
+		Application.LoadLevel ("gameover");
 
 	}
 }
