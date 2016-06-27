@@ -22,5 +22,6 @@ public class Player : MonoBehaviour {
 	void OnTriggerEnter(Collider collider) {
 		if (collider.transform.tag == "end")
 			Application.LoadLevel ("victory");
+		Debug.Log ("collision");
 	}
 }
